@@ -7,7 +7,7 @@ import Card from '../components/Card';
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
-      marginTop: '5px',
+      marginTop: '5px'
     },
     paper: {
       padding: theme.spacing(2),
@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   }));
 
 const HomePage = () => {
-    const products = useSelector(state => state.products)
+    const products = useSelector(state => state.products);
     const classes = useStyles();
 
     const categorys = products.map(
